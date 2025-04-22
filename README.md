@@ -18,7 +18,8 @@
 │   ├── figures/             # 图表文件
 │   ├── summary.md           # 项目总结
 │   ├── analysis_report.md   # 详细分析报告
-│   └── attribution_model.md # 归因模型说明
+│   ├── attribution_model.md # 归因模型说明
+│   └── analysis_design.md   # 分析方案设计
 └── datasets/                 # 数据文件（不包含在GitHub中）
 ```
 
@@ -30,6 +31,16 @@
 4. 多维度因素贡献度计算
 5. 可视化展示
 6. 业务建议生成
+
+## 分析方法
+
+本项目采用多维度归因分析方法，详细的分析框架和思路请参考[分析方案设计](results/analysis_design.md)。
+
+主要分析维度包括：
+- 时间维度（月份、星期、节假日）
+- 店铺维度（类型、商品种类、地理位置）
+- 促销维度（促销活动、连续促销）
+- 竞争维度（竞争对手距离、开业时间）
 
 ## 使用方法
 
@@ -47,6 +58,7 @@ python visualization.py
 - 分析报告：`results/analysis_report.md`
 - 项目总结：`results/summary.md`
 - 归因模型：`results/attribution_model.md`
+- 分析方案：`results/analysis_design.md`
 
 ## 分析结果
 
